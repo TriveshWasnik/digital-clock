@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #08001f, #30197d);
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clock {
+  background-color: #9b59b6;
+
+  padding: 40px;
+  border-radius: 20px;
+}
+.clock span {
+  display: inline-block;
+  width: 96px;
+  padding: 10px;
+  text-align: center;
+  background-color: #30197d;
+  font-size: 30px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.clock span::after {
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  left: 0;
+  font-size: 16px;
+}
+
+.clock span#hrs::after {
+  content: "Hours";
+}
+.clock span#min::after {
+  content: "Minutes";
+}
+.clock span#sec::after {
+  content: "Seconds";
+}
+
+.calender {
+  display: flex;
+  background-color: #333;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 1px;
+}
+
+.left {
+  background-color: #ddd;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.right {
+  background-color: #9b59b6;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#date {
+  font-size: 144px;
+  font-weight: bold;
+}
+#day {
+  font-size: 32px;
+  font-weight: bold;
+}
+#month {
+  font-size: 32px;
+  font-weight: bold;
+}
+#year {
+  font-size: 72px;
+  font-weight: bold;
+}
