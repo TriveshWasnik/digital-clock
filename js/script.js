@@ -1,12 +1,8 @@
-const hrs = document.querySelector("#hrs");
-const min = document.querySelector("#min");
-const sec = document.querySelector("#sec");
+let time = document.querySelector("#time");
 
 setInterval(() => {
-  const time = new Date();
-  hrs.innerHTML = (time.getHours() < 10 ? "0" : "") + time.getHours();
-  min.innerHTML = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
-  sec.innerHTML = (time.getSeconds() < 10 ? "0" : "") + time.getSeconds();
+  const time2 = new Date().toLocaleTimeString();
+  time.innerHTML = time2;
 }, 1000);
 
 const date = document.querySelector("#date");
